@@ -1,3 +1,10 @@
+/* Colour variables */
+/* Layout variables */
+/* Root styles */
+:root {
+  font-size: 18px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -9,11 +16,20 @@ body {
   background-color: #EDF0F4;
 }
 
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
 .container {
   color: #221F1F;
   background-color: #FFFFFF;
   border-radius: 50px;
   margin: 75px;
+  box-shadow: #221f1f21 0px 0px 5px;
 }
 
 /* Header */
@@ -25,17 +41,17 @@ header {
   padding: 75px 75px 0 75px;
 }
 header .site-title {
-  flex-grow: 1;
+  flex-grow: 2;
 }
 header .site-title h1 {
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 2.5rem;
 }
 header .site-title h1 a {
   text-decoration: none;
+  color: #221F1F;
 }
 header nav {
-  flex-grow: 3;
+  flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,9 +60,10 @@ header nav a {
   text-decoration: none;
   display: block;
   padding: 10px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 2.5px 0px 2.5px;
   transition: all 0.3s;
   border-radius: 5px;
+  color: #221F1F;
 }
 header nav a:hover {
   color: white;
@@ -60,15 +77,46 @@ header nav a:hover {
 
 section {
   margin-bottom: 37.5px;
+  border-bottom: #221f1f21 solid 1px;
+}
+section h2 {
+  display: inline-block;
+  background-color: #221F1F;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
 }
 section p {
   margin-bottom: 18.75px;
+  line-height: 1.25;
+  font-weight: 300;
+}
+
+.section-title {
+  margin-bottom: 75px;
+  background-color: #3792EB;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+}
+.section-title p {
+  margin: 0;
+  font-weight: 300;
 }
 
 /* Footer */
 footer {
   background-color: #221F1F;
   color: #FFFFFF;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 footer .footer-links-container {
   display: flex;
@@ -77,11 +125,11 @@ footer .footer-links-container {
 }
 footer .footer-links-container .footer-links-column {
   flex-grow: 1;
-  height: 200px;
+  height: 325px;
+  padding: 5% 10% 5% 10%;
 }
 footer .footer-links-container .footer-links-column h1 {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1rem;
 }
 footer .footer-links-container .footer-links-column ul {
   list-style-type: none;
@@ -92,7 +140,8 @@ footer .footer-links-container .footer-links-column a {
 }
 footer .copyright {
   text-align: center;
-  padding: 10px 0px 10px 0px;
+  padding: 0px 0px 2% 0px;
+  font-size: 0.75rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
