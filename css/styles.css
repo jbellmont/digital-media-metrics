@@ -85,6 +85,11 @@ p {
     height: 250px;
   }
 
+  .ad-leaderboard {
+    width: 300px;
+    height: 250px;
+  }
+
   .ad-bottom {
     width: 300px;
     height: 250px;
@@ -125,6 +130,11 @@ p {
   .ad-bottom {
     width: 970px;
     height: 250px;
+  }
+
+  .ad-leaderboard {
+    width: 728px;
+    height: 90px;
   }
 
   .ad-unit-outside-content-bottom {
@@ -187,6 +197,9 @@ p {
   }
   nav a:hover {
     background-color: #221f1f21;
+    color: #3792EB;
+  }
+  nav a.current {
     color: #3792EB;
   }
 }
@@ -291,6 +304,32 @@ p {
   .content section p:last-child {
     margin-bottom: 37.5px;
   }
+  .content section .metric-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 37.5px;
+  }
+  .content section .metric-grid a {
+    font-size: 1.25rem;
+    width: 300px;
+    height: 75px;
+    background-color: #3792EB;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .content section .metric-grid a:hover {
+    background-color: #221F1F;
+  }
 }
 @media (min-width: 768px) {
   .content .section-title {
@@ -315,6 +354,61 @@ p {
     padding-right: 75px;
   }
 }
+/* Contact Page */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 75px;
+  font-weight: 300;
+}
+.contact-form-container form {
+  background-color: #221f1f21;
+  border-radius: 5px;
+  padding: 37.5px;
+}
+.contact-form-container form .contact-form-title {
+  font-weight: 400;
+}
+.contact-form-container form .contact-form {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 300px;
+}
+.contact-form-container form .contact-form .contact-form-left {
+  height: 75%;
+  width: 50%;
+}
+.contact-form-container form .contact-form .contact-form-right {
+  height: 75%;
+  width: 50%;
+}
+.contact-form-container form .contact-form input {
+  height: 40px;
+  width: 300px;
+  outline: none;
+}
+.contact-form-container form .contact-form textarea {
+  width: 350px;
+  height: 200px;
+  outline: none;
+}
+.contact-form-container form .button-area {
+  width: 100%;
+  text-align: center;
+}
+.contact-form-container form .button-area button {
+  background-color: #3792EB;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 150px;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+}
+
 /* Footer */
 @media (min-width: 320px) {
   /* Mobile */
