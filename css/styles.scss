@@ -385,6 +385,24 @@ p {
         }
       }
 
+      .img-screengrab {
+        text-align: center;
+        margin-bottom: $padding/2;
+        img {
+          width: 100%;
+        }
+      }
+
+      ul {
+        padding: $padding/4 $padding/2 $padding/2 $padding/2;
+        font-size: 0.9rem;
+        font-weight: 300;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+
       .metric-grid {
         display: flex;
         flex-wrap: wrap;

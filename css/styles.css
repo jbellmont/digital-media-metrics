@@ -319,6 +319,21 @@ p {
   .content section .img-equation img {
     width: 100%;
   }
+  .content section .img-screengrab {
+    text-align: center;
+    margin-bottom: 37.5px;
+  }
+  .content section .img-screengrab img {
+    width: 100%;
+  }
+  .content section ul {
+    padding: 18.75px 37.5px 37.5px 37.5px;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  .content section ul li {
+    margin-bottom: 10px;
+  }
   .content section .metric-grid {
     display: flex;
     flex-wrap: wrap;
