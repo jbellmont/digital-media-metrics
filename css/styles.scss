@@ -311,7 +311,9 @@ p {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 130px;
+      padding: 10px;
+      min-height: 100px;
+      max-height: 250px;
 
       h1 {
         font-size: 1.6rem;
@@ -362,10 +364,25 @@ p {
       p {
         margin-bottom: $padding / 4;
         line-height: 1.25;
+
+        a {
+          font-weight: 400;
+          text-decoration: none;
+          color: $dark-blue;
+          transition: all $hover-duration;
+        } 
       }
 
       p:last-child {
         margin-bottom: $padding / 2;
+      }
+
+      .img-equation {
+        text-align: center;
+        margin-bottom: $padding/2;
+        img {
+          width: 100%;
+        }
       }
 
       .metric-grid {
@@ -405,7 +422,6 @@ p {
 @media (min-width: 768px) {
   .content {
     .section-title {
-      height: 100px;
       margin-top: 0;
 
       h1 {
@@ -434,6 +450,13 @@ p {
           }
         }
       }
+
+      .img-equation {
+        margin-bottom: $padding/2;
+        img {
+          width: 80%;
+        }
+      }
     }
 
 
@@ -441,6 +464,89 @@ p {
   }
 }
 
+/* Calculator */
+@media (min-width: 320px) { /* Mobile */
+  .calculator {
+    background-color: $dark-grey;
+    color: #FFFFFF;
+    border-radius: $border-radius;
+    padding: $padding/2;
+    font-weight: 300;
+    margin-bottom: $padding/2;
+    // box-shadow: rgba(0, 0, 0, 0.596) 0px 0px 5px;
+
+    .calculator-title {
+      text-align: center;
+      padding-bottom: $padding/2;
+
+      i {
+        margin-bottom: 10px;
+      }
+    }
+
+    form {
+      input {
+        margin-bottom: $padding/4;
+        font-size: 1rem;
+        font-weight: 300;
+        padding: 10px;
+        height: 50px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: $border-radius/2;
+      }
+
+      label:last-of-type input {
+        background-color: #cacaca;
+        margin-bottom: $padding/3;
+      }
+
+      button {
+        background-color: $dark-blue;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+        border-radius: $border-radius/2;
+        width: 100%;
+        height: 50px;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .calculator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .calculator {
+      padding: $padding;
+      width: 60%;
+      form {
+        button {
+          transition: background-color $hover-duration;
+        }
+        button:hover {
+          background-color: #2b79c7;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .calculator-container {
+    .calculator {
+      width: 50%;
+      // padding: $padding $padding*4 $padding $padding*4;
+      margin-bottom: $padding;
+    }
+  }
+}
 
 /* Contact Page */
 
@@ -478,7 +584,7 @@ p {
             width: 300px;
             outline: none;
             border: 1px solid rgb(170, 170, 170);
-            border-radius: 5px;
+            border-radius: $border-radius;
             margin-bottom: 29px;
           }
         }
