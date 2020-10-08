@@ -1,3 +1,4 @@
+/* Font variables */
 /* Colour variables */
 /* Layout variables */
 /* default is for tablet, desktop and above */
@@ -268,6 +269,12 @@ p {
   .content .section-title p {
     margin: 0;
   }
+  .content .performance-color {
+    background-color: #f08395;
+  }
+  .content .contact-color {
+    background-color: #221F1F;
+  }
   .content section {
     margin-bottom: 37.5px;
     border-bottom: #221f1f21 solid 1px;
@@ -342,6 +349,7 @@ p {
     margin-bottom: 37.5px;
   }
   .content section .metric-grid a {
+    flex-grow: 2;
     font-size: 1.25rem;
     width: 300px;
     height: 75px;
@@ -359,6 +367,9 @@ p {
   }
   .content section .metric-grid a:hover {
     background-color: #221F1F;
+  }
+  .content section .metric-grid i {
+    margin-right: 10px;
   }
 }
 @media (min-width: 768px) {

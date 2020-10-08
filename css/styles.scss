@@ -1,3 +1,4 @@
+/* Font variables */
 $font: 'Roboto', sans-serif;
 
 /* Colour variables */ 
@@ -6,7 +7,6 @@ $light-blue: #edf0f480;
 $dark-blue: #3792EB;
 $dark-grey: #221F1F;
 $dark-grey-opaque: #221f1f21;
-
 
 /* Layout variables */
 $padding: 75px; /* default is for tablet, desktop and above */
@@ -325,6 +325,14 @@ p {
       
     }
 
+    .performance-color {
+      background-color: rgb(240, 131, 149);
+    }
+
+    .contact-color {
+      background-color: $dark-grey;
+    }
+
     section {
       margin-bottom: $padding / 2;
       border-bottom: $dark-grey-opaque solid 1px;
@@ -411,6 +419,7 @@ p {
         margin-bottom: $padding/2;
       
         a {
+          flex-grow: 2;
           font-size: 1.25rem;
           width: 300px;
           height: 75px;
@@ -430,7 +439,10 @@ p {
         a:hover {
           background-color: $dark-grey;
         }
-      
+
+        i {
+          margin-right: 10px;
+        }
       }
     
     }
