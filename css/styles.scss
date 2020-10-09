@@ -184,7 +184,6 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
 
   .site-title {
     padding-top: $padding / 1.5;
@@ -211,15 +210,18 @@ p {
   }
 
   nav {
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: $padding / 3;
-    padding: 5px 0px 5px 0px;
+    line-height: 35px;
     background-color: $light-blue;
     border-radius: $border-radius;
 
     a {
+      height: 100%;
+      padding: 0px 5px;
       font-size: 1rem;
       text-decoration: none;
       display: block;
@@ -238,7 +240,9 @@ p {
       color: $dark-blue;
     }
 
-    }
+  }
+
+  }
 
 }
 
@@ -252,23 +256,27 @@ p {
 
     .site-title {
       padding-top: 0;
-      width: 500px;
+      flex-grow: 2;
 
       h1 {
         font-size: 2rem;
       }
 
     }
-  }
 
-  nav {
-    padding: 0;
-    margin-top: 0;
-
-    a {
-      margin: 0;
-      padding: 10px;
-      font-size: 0.7rem;
+    nav {
+      padding: 0;
+      margin-top: 0;
+      margin-left: 10px;
+      flex-grow: 1;
+      height: 100%;
+      line-height: normal;
+  
+      a {
+        margin: 0;
+        padding: 10px;
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -288,7 +296,7 @@ p {
 
     nav {
       a {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
   }
