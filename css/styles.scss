@@ -210,19 +210,17 @@ p {
   }
 
   nav {
-    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: $padding / 3;
-    line-height: 35px;
     background-color: $light-blue;
     border-radius: $border-radius;
 
     a {
       height: 100%;
-      padding: 0px 5px;
-      font-size: 1rem;
+      padding: 5px 5px;
+      font-size: 0.9rem;
       text-decoration: none;
       display: block;
       margin: 0px 5px 0px 5px;
@@ -403,6 +401,7 @@ p {
 
       .img-screengrab {
         text-align: center;
+        margin-top: $padding/2;
         margin-bottom: $padding/2;
         img {
           width: 100%;
@@ -414,9 +413,21 @@ p {
         font-size: 0.9rem;
         font-weight: 300;
 
+        a {
+          font-weight: 400;
+          text-decoration: none;
+          color: $dark-blue;
+          transition: all $hover-duration;
+        } 
+
         li {
           margin-bottom: 10px;
         }
+      }
+
+      ul.nested-list {
+        font-size: 0.75rem;
+        padding-top: $padding/8;
       }
 
       .metric-grid {
@@ -549,6 +560,10 @@ p {
         width: 100%;
         height: 50px;
         border: none;
+      }
+
+      button:focus {
+        outline: none;
       }
     }
   }

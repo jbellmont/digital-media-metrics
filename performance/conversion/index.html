@@ -139,24 +139,23 @@
               of cases this will mean a sale. 
             </p>
             <p>For example, if a user <a href="/performance/click/index.html" target="_blank">
-              clicks</a> on a PPC search ad and buys a t-shirt from the landing 
+              clicks</a> on a PPC search ad and buys a t-shirt from landing 
               on the advertiser page, that would count as a sales conversion. A 
-              conversion is tracked via a conversion pixel - javascript code that 
-              fires when a conversion event has been triggered - which communicates 
-              to the ad server or system informing it that a conversion has occurred. 
+              conversion is tracked via a conversion pixel (Javascript code that 
+              fires when a conversion event has been triggered), which tells 
+               the ad server that a conversion has occurred. 
               This conversion will then be attributed to the ad that influenced 
-              the conversion (please see below for different types of conversion 
-              attribution).
+              the conversion.
             </p>
             <p>Other conversion types could include 
               <a href="/performance/click/index.html" target="_blank">clicks</a> 
               on a URL, a landing page visit, a newsletter sign-up, a white paper 
               or brochure download, or a telephone call via a number that is 
               linked to the digital campaign. Any trackable action or event that 
-              the marketer can add a conversion pixel to will count as a conversion.
+              the marketer can add a conversion pixel to can count as a conversion.
             </p>
             <p>In analytics systems (e.g. Google Analytics), these are often 
-              referred to as “events” rather than conversions. 
+              referred to as “events” or "goals", rather than conversions. 
             </p>
           </div>
 
@@ -200,7 +199,7 @@
           Why is it important to track conversions?
         </h2>
         <p>The primary reason for tracking conversions is to understand the efficacy 
-          of each digital channel, vendor or ad. For example, if you run an e-commerce 
+          of your campaign. For example, if you run an e-commerce 
           website and do not know which of your ads are driving sales, you could 
           be potentially making poor use of your budget. Once conversion tracking 
           is set up, you will be able to understand which tactic or strategy is 
@@ -218,7 +217,7 @@
         <p>You should set up and track conversions in a way that reflects your 
           marketing funnel. Once you have your funnel fully tracked, you will be 
           able to understand where people are dropping off as they are pushed down 
-          the funnel as well as create lookalike audiences from the high value 
+          the funnel, as well as creating lookalike audiences from high value 
           converters.
         </p>
       </section>
@@ -256,7 +255,7 @@
               <li><b>Click-through conversions (or post-click)</b> are conversions 
                 that were driven from a user 
                 <a href="/performance/click/index.html" target="_blank">clicking</a> 
-                on your ad and then converting then or at a later date (within 
+                on your ad and converting then or at a later date (within 
                 your defined conversion window). 
               </li>
               <li><b>View-through conversions (or post-view)</b> are conversions 
@@ -274,7 +273,7 @@
                   convert at a later date. 
               </li>
             </ul>
-            <p>If view-through conversions are ignored, you could be not giving 
+            <p>If view-through conversions are ignored, you could not be giving 
               enough credit to the digital channels or formats that are influencing 
               a conversion. Both types must be tracked and considered when 
               evaluating the results of a campaign.
@@ -313,11 +312,11 @@
         </p>
         <p>If this window is too long, we may be giving too much credit to the ad 
           if a user converts, for example, 30 days in the future, when in reality 
-          the influence of the ad might have worn off by then. For the inverse with 
-          a too smaller window, may be under-attributing the effect of the ad. 
+          the influence of the ad might have worn off by then. For the inverse, we 
+          may be under-attributing the effect of the ad. 
         </p>
         <p>When defining a conversion window, you should take into consideration 
-          the purchase or converting cycle of the product or service. A more expensive 
+          the purchase cycle of the product or service. A more expensive 
           product will likely need a longer attribution window as people take longer 
           to research and consider than a lower cost item before converting. 
         </p>
@@ -337,12 +336,12 @@
         <p>Instead of looking at single conversions in isolation, setting up multi-touch 
           conversion attribution will help you understand the path to conversion 
           and which touchpoints the user was exposed to throughout the journey. 
-          In the real world, the user will be likely exposed to many ads before 
+          In the real world, the user will be exposed to many ads before 
           finally converting; conversion attribution modelling will alleviate 
           these shortfalls. 
         </p>
-        <p>In multi-touch attribution, giving different weightings to each channel 
-          or touchpoint allows you attribute the conversion across multiple 
+        <p>In multi-touch attribution, giving different weightings to each touchpoint 
+          allows you attribute the conversion across multiple 
           touchpoints rather than the one that the user saw last before converting.
         </p>
         <p>The most commonly used single-touch and multi-touch conversion attribution 
@@ -359,16 +358,16 @@
             served afterwards
           </li>
           <li><b>Multi-touch:</b> the act of giving multiple touchpoints credit 
-            throughout the purchase journey
+            throughout the purchase journey:
           </li>
-          <ul>
+          <ul class="nested-list">
               <li><b>Linear:</b> each touch point is given an equal proportion 
                 of the attribution
               </li>
               <li><b>Time decay:</b> the touchpoint that was closest to conversion 
                 will receive a higher share of the attribution
               </li>
-              <li><b>Cross-device:</b> using probabilistic or determinitic modelling, 
+              <li><b>Cross-device:</b> using probabilistic or deterministic modelling, 
                 you would track the number of devices and ads a user was exposed 
                 to before converting
               </li>
